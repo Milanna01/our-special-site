@@ -634,6 +634,13 @@ body {
     animation: none !important;
     transform: none !important;
   }
+
+.letter-card h2,
+.letter-text,
+.letter-ending {
+  font-family: "Cormorant Garamond", serif;
+}
+
 }
 
 .envelope-bow {
