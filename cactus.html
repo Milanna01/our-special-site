@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маленький кактус для тебя 🌵</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cactus.css">
+  <script src="cactus.js" defer></script>
+</head>
+
+<body>
+    <div class="cactus-background"></div>
+      <a class="back-button" href="./home.html">← Назад к подаркам</a>
+
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+  <div class="floating-decor" id="floating-decor">
+  <span class="decor-item decor-one">✦</span>
+  <span class="decor-item decor-two">♡</span>
+  <span class="decor-item decor-three">✧</span>
+  <span class="decor-item decor-four">🌸</span>
+  <span class="decor-item decor-five">♡</span>
+  <span class="decor-item decor-six">✦</span>
+  <span class="decor-item decor-seven">✧</span>
+  <span class="decor-item decor-eight">🌷</span>
+  <span class="decor-item decor-nine">✧</span>
+  <span class="decor-item decor-ten">♡</span>
+  <span class="decor-item decor-eleven">🌼</span>
+  <span class="decor-item decor-twelve">✦</span>
+</div>
+
+
+
+  <main class="garden">
+    <div class="eyebrow">YOUR LITTLE GREEN FRIEND</div>
+
+    <h1>
+      Маленький кактус
+      <span>для тебя</span>
+    </h1>
+
+    <p class="subtitle">
+      У меня для тебя кое-что особенное<span>...</span> 💗
+    </p>
+
+    <p class="instruction">
+      Нажми на кактусик и посмотри, что будет ✨
+    </p>
+
+    <div class="plant-scene">
+      <span class="sparkle sparkle-one">✦</span>
+      <span class="sparkle sparkle-two">✧</span>
+      <span class="sparkle sparkle-three">✦</span>
+
+      <button
+        class="cactus-button"
+        id="cactus-button"
+        type="button"
+        aria-label="Нажми, чтобы кактус ожил"
+      >
+        <span class="flower" id="flower">
+          <span class="petal petal-top"></span>
+          <span class="petal petal-left"></span>
+          <span class="petal petal-right"></span>
+          <span class="petal petal-bottom-left"></span>
+          <span class="petal petal-bottom-right"></span>
+          <span class="flower-center"></span>
+        </span>
+
+        <span class="cactus">
+          <span class="arm arm-left"></span>
+          <span class="arm arm-right"></span>
+
+          <span class="cactus-body">
+            <span class="rib rib-one"></span>
+            <span class="rib rib-two"></span>
+            <span class="rib rib-three"></span>
+
+            <span class="eye eye-left"></span>
+            <span class="eye eye-right"></span>
+            <span class="cheek cheek-left"></span>
+            <span class="cheek cheek-right"></span>
+            <span class="smile"></span>
+
+            <span class="spine spine-one">✧</span>
+            <span class="spine spine-two">·</span>
+            <span class="spine spine-three">·</span>
+            <span class="spine spine-four">✧</span>
+            <span class="spine spine-five">·</span>
+            <span class="spine spine-six">·</span>
+          </span>
+        </span>
+      </button>
+
+      <button
+        class="pot-button"
+        id="pot-button"
+        type="button"
+        aria-label="Открыть секретное письмо"
+      >
+        <span class="pot-rim"></span>
+        <span class="pot">
+          <span class="pot-heart">♡</span>
+        </span>
+        <span class="pot-hint">psst... нажми сюда</span>
+      </button>
+
+      <div class="ground-shadow"></div>
+    </div>
+
+    <div class="speech-bubble" id="speech-bubble" aria-live="polite">
+      Привет! Я твой маленький колючий друг 🌵
+    </div>
+
+    <h2>Вообще-то это всё ради твоей улыбки ♡</h2>
+
+    <p class="description">
+      Даже самый маленький кактус может сделать чей-то день чуточку теплее.
+    </p>
+
+    <button class="main-button" id="bloom-button" type="button">
+      Распусти мой цветочек 🌸
+    </button>
+
+    <p class="footer-note">made with love, just for you ♡</p>
+  </main>
+
+  <!-- Единственная открытка: скрыта при загрузке -->
+  <div
+    class="letter-overlay"
+    id="letter-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="letter-title"
+    hidden
+  >
+    <div class="letter-card">
+      <button
+        class="letter-close"
+        id="letter-close"
+        type="button"
+        aria-label="Закрыть письмо"
+      >×</button>
+
+      <div class="letter-icon">💌</div>
+      <p class="letter-eyebrow">A LITTLE SECRET</p>
+
+      <h2 id="letter-title">Секретик для тебя 💗</h2>
+
+      <p class="letter-text">
+        Я понимаю, что не могу подарить тебе что-то вживую, ведь между нами такое большое расстояние, ахахах 🥹💗
+      </p>
+
+      <p class="letter-text">
+        Но я долго думала, что же подарить тебе, чтобы это осталось с тобой надолго и никогда не испортилось.
+      </p>
+
+      <p class="letter-text">
+        Я очень надеюсь, что тебе понравится мой маленький кактусик, потому что я правда старалась сделать его особенным для тебя. 🌵🎀
+      </p>
+
+      <p class="letter-text">
+        Пусть он радует тебя и напоминает о том, что даже на расстоянии мне хочется сделать тебе приятное, моя дорогая. 💗
+      </p>
+
+      <div class="letter-signature">Обнимаю тебя мысленно ♡</div>
+
+      <button class="main-button" id="letter-done" type="button">
+        Как мило 💗
+      </button>
+    </div>
+  </div>
+</body>
+</html>

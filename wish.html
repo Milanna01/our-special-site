@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маленькое чудо для тебя 💗</title>
+  <link rel="stylesheet" href="wish.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="intro-screen" id="intro-screen">
+    <div class="intro-content">
+      <p class="tiny-note">Тут кое-что, что я обычно вслух не говорю… 💗</p>
+      <h1>Анечка, это тебе!</h1>
+      <p class="intro-text">Так что открывай, пока я не передумала быть такой 😭🎀</p>
+
+      <button class="envelope-button" id="open-envelope" type="button" aria-label="Открыть письмо">
+        <span class="envelope">
+          <span class="envelope-bow">🎀</span>
+        </span>
+        <span class="envelope-hint">нажми на конвертик ♡</span>
+      </button>
+
+      <a class="back-link" href="home.html">← назад к подаркам</a>
+    </div>
+  </main>
+
+  <section class="letter-scene" id="letter-scene" hidden>
+    <div class="cake-area" aria-label="Праздничный тортик с горящими свечами" role="img">
+      <div class="cake-glow"></div>
+
+      <div class="candles">
+        <div class="candle candle-left">
+          <span class="flame"></span>
+        </div>
+        <div class="candle candle-middle">
+          <span class="flame"></span>
+        </div>
+        <div class="candle candle-right">
+          <span class="flame"></span>
+        </div>
+      </div>
+
+      <div class="cake">
+        <div class="cake-icing"></div>
+        <div class="icing-drip drip-one"></div>
+        <div class="icing-drip drip-two"></div>
+        <div class="icing-drip drip-three"></div>
+        <div class="cake-decoration">♡ · ♡ · ♡</div>
+      </div>
+      <div class="cake-plate"></div>
+      <p class="cake-caption">Загадай желание, Анечка (только честно) ♡</p>
+<button class="blow-button" id="blow-candles" type="button">
+  Загадала? Тогда задувай! 🎂
+</button>
+    </div>
+
+    <article class="letter-card" id="letter-card">
+      <p class="letter-eyebrow">ОТ ВСЕГО СЕРДЦА</p>
+      <h2>С днём рождения, Анечка! 💗</h2>
+      <div class="letter-text" id="letter-text"></div>
+      <p class="letter-ending">Надеюсь, сегодня ты почувствовала, как сильно ты любима. ♡</p>
+
+      <button class="final-secret-button" id="final-secret-button" type="button" aria-label="Секрет">
+        ♡
+      </button>
+    </article>
+  </section>
+
+  <div class="final-secret-popup" id="final-secret-popup">
+    <div class="final-secret-card">
+      <button class="final-secret-close" id="final-secret-close" type="button">×</button>
+
+      <div class="final-secret-heart">💗</div>
+
+      <p class="final-secret-text">
+        You can be tired, you can doubt yourself,
+        but to me, you'll always be an incredibly strong girl.
+      </p>
+
+      <p class="final-secret-ending">
+        Oh, wait… that's you. ♡
+      </p>
+
+      <p class="final-secret-love">Я люблю тебя ♡</p>
+      <p class="final-secret-thanks">Надеюсь, тебе понравилось. ♡</p>
+    </div>
+  </div>
+
+  <audio id="love-song" preload="auto">
+    <source src="music/love-poem.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="wish.js"></script>
+</body>
+</html>
