@@ -638,7 +638,7 @@ body {
 .letter-card h2,
 .letter-text,
 .letter-ending {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif !important;
 }
 
 }
