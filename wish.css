@@ -506,12 +506,14 @@ body {
   }
 
   .letter-card h2 {
-    margin-bottom: 20px;
-  }
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
 
   .letter-text {
-    line-height: 1.65;
-  }
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
