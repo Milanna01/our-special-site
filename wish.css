@@ -511,9 +511,16 @@ body {
 }
 
   .letter-text {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   line-height: 1.7;
 }
+
+.letter-card h2,
+.letter-text,
+.letter-ending {
+  font-family: "Cormorant Garamond", serif !important;
+}
+
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -634,12 +641,6 @@ body {
     animation: none !important;
     transform: none !important;
   }
-
-.letter-card h2,
-.letter-text,
-.letter-ending {
-  font-family: "Cormorant Garamond", serif !important;
-}
 
 }
 
