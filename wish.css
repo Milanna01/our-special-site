@@ -778,9 +778,21 @@ body {
 
 @media (max-width: 500px) {
   body {
-    background-size: auto 100vh !important;
-    background-position: center center !important;
-    background-attachment: fixed !important;
-    background-repeat: no-repeat !important;
+    position: relative;
+    isolation: isolate;
+    background-image: none !important;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-image: url("images/letter-background.gif");
+    background-size: auto 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
