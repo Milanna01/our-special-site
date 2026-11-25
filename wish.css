@@ -779,8 +779,8 @@ body {
 @media (max-width: 500px) {
   body {
     background-size: auto 100vh !important;
-    background-position: center top !important;
-    background-attachment: scroll !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
     background-repeat: no-repeat !important;
   }
 }
