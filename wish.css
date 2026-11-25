@@ -776,3 +776,11 @@ body {
   font-family: "Marck Script", cursive;
 }
 
+@media (max-width: 500px) {
+  body {
+    background-size: auto 100vh !important;
+    background-position: center top !important;
+    background-attachment: scroll !important;
+    background-repeat: no-repeat !important;
+  }
+}
