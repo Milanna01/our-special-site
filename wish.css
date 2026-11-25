@@ -636,7 +636,7 @@ body {
   }
 
   body {
-    background-size: auto 99%;
+    background-size: auto;
     background-position: center center;
     animation: none !important;
     transform: none !important;
