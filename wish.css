@@ -19,13 +19,7 @@ body {
   min-height: 100vh;
   font-family: "Satisfy", cursive;
   color: var(--text);
-
   background-color: #fff3f6;
-  background-image: url("images/letter-background.gif");
-  background-size: auto 99%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 [hidden] {
@@ -488,10 +482,6 @@ body {
     gap: 30px;
   }
 
-  body {
-    background-attachment: scroll;
-  }
-
 
   .cake-area {
   height: 270px;
@@ -633,13 +623,6 @@ body {
 
   .cake-area {
     margin-bottom: 65px;
-  }
-
-  body {
-    background-size: auto;
-    background-position: center center;
-    animation: none !important;
-    transform: none !important;
   }
 
 }
@@ -795,4 +778,24 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
   }
+}
+
+/* Отдельный неподвижный слой фона */
+.page-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background-image: url("images/letter-background.gif");
+  background-size: auto 99%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Содержимое страницы располагается поверх фона */
+.intro-screen,
+.letter-scene {
+  position: relative;
+  z-index: 1;
 }
